@@ -1,7 +1,7 @@
 // Thin fetch wrapper around the BlockBlog backend (Express + JWT).
 // Base URL is configurable via VITE_API_URL; defaults to the local backend.
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000/api').replace(/\/$/, '');
+const API_BASE = (import.meta.env.VITE_API_URL || 'https://block-block-9578.vercel.app/api').replace(/\/$/, '');
 // Origin without the trailing /api — used to resolve relative /uploads image paths.
 const SERVER_ORIGIN = API_BASE.replace(/\/api$/, '');
 
